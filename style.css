@@ -1,0 +1,318 @@
+/*
+Theme Name: PorteFolio
+Author: Kevin Gueders
+Template: bones
+*/
+
+/* 	
+	@media only screen and (max-width: 959px){code css ici}
+	@media only screen and (min-width: 768px) and (max-width: 959px){code css ici} -- tabelette paysage
+	@media only screen and (max-width: 767px){code css ici} -- les 3 suivants
+	@media only screen and (min-width: 480px) and (max-width: 767px){code css ici} -- téléphone mobile paysage + tabelette portrait
+	@media only screen and (max-width: 479px){code css ici} -- téléphone mobile portrait
+	device-pixel-ratio, min-resolution: 192dpi
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+@import url(http://fonts.googleapis.com/css?family=Anton);
+
+body{
+    margin : 0em;
+    background-color: #ffffff;
+    font-family: Myriad,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+}
+
+#centre{
+	width: 100%;
+	background-color: #ffffff;
+	background-image: url('./img/struckaxiom.png');
+	overflow: hidden;
+}
+
+header{
+    width: 50%;
+    margin: 0em auto 0em;
+	font: 1em 'Open Sans Condensed';
+	font-weight: 700;
+}
+
+nav{
+    float: left;
+    width: 70%;
+    margin: 0em auto;
+}
+
+header h1{
+    width: 30%;
+	float: left;
+    
+}
+header h1 em{
+    font-family: 'Open Sans';
+}
+
+header h1 a{
+    
+    display: inline-block;
+    color: black;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+}
+
+nav ul{
+    width: 100%;
+    padding: 0em;
+    float: right;
+}
+
+nav li{
+    width: 15%;
+    min-width: 130px;
+    margin: 1.6em auto 0em;
+    list-style: none;
+    font-size: 1.1em;
+    float: left;
+}
+
+nav a{
+    
+    display: inline-block;
+    height: 2em;
+    width: 90%;
+    margin-right: 10%;
+    text-align: center;
+	font-size: 1.2em;
+    line-height: 2em;
+    color: black;
+    text-decoration: none;
+	-moz-transition: background-color 0.4s linear;
+	transition: background-color 0.4s linear;
+}
+
+nav a:hover{
+   
+    text-decoration: underline;
+	color: white;
+	background-color: rgba(82,161,243,0.8);
+
+}
+
+#actif{
+    
+    color: #52A1F3;
+}
+
+#actif:hover{
+   
+    text-decoration: underline;
+	color: white;
+}
+
+#accueil
+{
+    /*margin-bottom: 2.5em;*/
+	color: white;
+	font: 2em league-gothic, serif; 
+	padding: 1em 0em 1em 0em;
+    line-height: 1.5em;
+	/*margin-top: 2.4em;*/
+	background-color:  #52A1F3; 
+	-webkit-box-shadow: inset 0px 4px 4px -2px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow: inset 0px 4px 4px -2px rgba(50, 50, 50, 0.4);
+	box-shadow: inset 0px 4px 4px -2px rgba(50, 50, 50, 0.4); 
+}
+
+#accueil h1,#accueil p{
+    width: 50%;
+    margin: 0.5em auto;
+}
+
+#accueil p{
+	text-align: center;
+}
+
+#travaux{
+	background-image: url('./img/struckaxiom.png');
+	overflow: hidden;
+	-moz-box-shadow: 0px 0px 4px 2px rgba(50, 50, 50, 0.4); 
+    -webkit-box-shadow: 0px 0px 4px 2px rgba(50, 50, 50, 0.4); 
+    box-shadow: 0px 0px 4px 2px rgba(50, 50, 50, 0.4);
+}
+
+#travaux h1{
+    width: 50%;
+    margin: 1em auto;
+}
+
+#travaux p{
+    width: 50%;
+    margin: 1em auto 2em;
+}
+
+#travaux ul{
+    width: 50%;
+    margin: auto;
+    padding: 0em;
+    z-index: 1;
+}
+
+
+#travaux ul li{
+    
+    min-width: 210px;
+    margin-left: 0em;
+	margin-bottom: 2em;
+    margin-right: 2.8%;
+    list-style: none;
+    float: left;
+}
+
+#travaux dt{
+	margin-bottom: 1.1em;
+}
+
+#travaux dt a{
+	font-weight: bold;
+	/*text-decoration: none;*/
+	color: #2B74E2; 
+}
+#travaux dd{
+	margin-left: 0em;
+}
+
+#propos{
+    clear: both;
+    margin-bottom: 0em;
+    width: 50%;
+    margin: auto;
+}
+
+#propos h1{
+    margin-bottom: 0.5em;
+	clear: both;
+}
+
+#propos ul{
+	padding-left: 0em;
+	overflow: hidden;
+}
+
+#propos .colonne{
+    width: 30%;
+    margin-right: 3.1%;
+    margin-bottom: 0em;
+    line-height: 1.5em;
+    float: left;
+	list-style-type: none;
+	padding-left: 0em;
+	margin-left: 0em;
+}
+#propos img{
+	display: block;
+}
+
+#propos section h1{
+    color: #2B74E2;
+}
+
+#contact{
+    clear: both;
+    padding-bottom: 1em;
+    border-top: groove 2px #fafafa;
+	border-bottom: ridge 2px #fafafa;
+    background-color: #ffffff;
+	background-image: url('./img/diagonal-noise.png');
+	overflow: hidden;
+}
+
+#conteneur{
+	width: 50%;
+    margin: 1em auto;
+    color: black; 
+}
+
+#conteneur #largeur, #contact form{
+    width: 50%;
+	float: left;
+}
+
+#contact form p{
+	width: 100%;
+}
+
+#contact input{
+	width: 340px;
+}
+
+#contact textarea{
+	width: 340px;
+	height: 100px;
+}
+
+#contact #submit{
+	display: block;
+	width: 125px;
+	height: 30px;
+	margin: 1em auto;
+	background: #52a0f3;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0b4aa1), to(#52a0f3));
+	background: -webkit-linear-gradient(top, #0b4aa1, #52a0f3);
+	background: -moz-linear-gradient(top, #0b4aa1, #52a0f3);
+	background: -ms-linear-gradient(top, #0b4aa1, #52a0f3);
+	background: -o-linear-gradient(top, #0b4aa1, #52a0f3);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+}
+   
+#contact #submit:hover {
+   border-top-color: #52a0f3;
+   background: #52a0f3;
+   color: #ffffff;
+}
+
+#contact label{
+	display: inline-block;
+	width: 65px;
+	vertical-align: top;
+}
+
+#contact a, #contact em{
+    color: #4889EA;
+}
+
+footer{
+	clear: both;
+    background-color:  #ffffff;
+    margin: auto;
+}
+
+footer nav{
+	float: none;
+    width: 50%;
+    margin: 0em auto;
+}
+
+footer nav li{
+	width: 25%;
+	margin-top: 0em;
+	font-size: 0.8em;
+	font-weight: none;
+}
+
+footer p{
+    width: 50%;
+	text-align: center;
+    font-size: 0.8em;
+    margin: 0em auto;
+    padding: 1em 0em;
+    color: #161616;      
+}
+
