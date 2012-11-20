@@ -32,7 +32,8 @@ body{
 }
 
 header{
-    width: 50%;
+	min-width:959px;
+    width: 65%;
     margin: 0em auto 0em;
 	font: 1em 'Open Sans Condensed';
 	font-weight: 700;
@@ -49,9 +50,6 @@ header h1{
 	float: left;
     
 }
-header h1 em{
-    font-family: 'Open Sans';
-}
 
 header h1 a{
     
@@ -64,12 +62,12 @@ header h1 a{
 
 nav ul{
     width: 100%;
+	min-width:520px;
     padding: 0em;
-    float: right;
 }
 
 nav li{
-    width: 15%;
+    width: 25%;
     min-width: 130px;
     margin: 1.6em auto 0em;
     list-style: none;
@@ -81,7 +79,7 @@ nav a{
     
     display: inline-block;
     height: 2em;
-    width: 90%;
+    width: 100%;
     margin-right: 10%;
     text-align: center;
 	font-size: 1.2em;
@@ -126,7 +124,8 @@ nav a:hover{
 }
 
 #accueil h1,#accueil p{
-    width: 50%;
+    min-width:959px;
+    width: 65%;
     margin: 0.5em auto;
 }
 
@@ -143,29 +142,32 @@ nav a:hover{
 }
 
 #travaux h1{
-    width: 50%;
+    min-width:959px;
+    width: 65%;
     margin: 1em auto;
 }
 
 #travaux p{
-    width: 50%;
+	min-width:959px;
+    width: 65%;
     margin: 1em auto 2em;
 }
 
 #travaux ul{
-    width: 50%;
+    min-width:959px;
+    width: 65%;
     margin: auto;
     padding: 0em;
-    z-index: 1;
 }
 
 
 #travaux ul li{
     
-    min-width: 210px;
+    min-width: 182px;
+	width: 23%;
     margin-left: 0em;
 	margin-bottom: 2em;
-    margin-right: 2.8%;
+    margin-right: 2%;
     list-style: none;
     float: left;
 }
@@ -186,7 +188,8 @@ nav a:hover{
 #propos{
     clear: both;
     margin-bottom: 0em;
-    width: 50%;
+    min-width:959px;
+    width: 65%;
     margin: auto;
 }
 
@@ -201,12 +204,14 @@ nav a:hover{
 }
 
 #propos .colonne{
+	min-width: 220px;
     width: 30%;
     margin-right: 3.1%;
     margin-bottom: 0em;
     line-height: 1.5em;
     float: left;
 	list-style-type: none;
+	/*text-align: justify;*/
 	padding-left: 0em;
 	margin-left: 0em;
 }
@@ -229,13 +234,15 @@ nav a:hover{
 }
 
 #conteneur{
-	width: 50%;
+	min-width:959px;
+    width: 65%;
     margin: 1em auto;
     color: black; 
 }
 
 #conteneur #largeur, #contact form{
-    width: 50%;
+    width: 47%;
+	margin-right: 3%;
 	float: left;
 }
 
@@ -296,7 +303,8 @@ footer{
 
 footer nav{
 	float: none;
-    width: 50%;
+    min-width:959px;
+    width: 65%;
     margin: 0em auto;
 }
 
@@ -308,11 +316,83 @@ footer nav li{
 }
 
 footer p{
-    width: 50%;
+    min-width:959px;
+    width: 65%;
 	text-align: center;
     font-size: 0.8em;
     margin: 0em auto;
     padding: 1em 0em;
     color: #161616;      
+}
+
+/* Media queries */
+/* Media entre 768 et 959px*/
+@media only screen and (min-width: 768px) and (max-width: 959px){
+
+header{
+	width: 80%;
+    min-width: 768px;
+    margin: 0em auto;
+}
+
+#accueil h1,#accueil p{
+    width: 80%;
+    min-width: 768px;
+    margin: 0.5em auto;
+}
+
+#travaux h1{
+    width: 80%;
+    min-width: 768px;
+}
+
+#travaux p{
+	width: 80%;
+    min-width: 768px;
+}
+
+#travaux ul{
+    width: 80%;
+    min-width: 768px;
+    padding: 0em;
+}
+
+#travaux ul li{
+    
+    min-width: 182px;
+    margin-left: 0em;
+	margin-bottom: 2em;
+    margin-right: 1.3%;
+    list-style: none;
+    float: left;
+}
+
+#propos{
+    clear: both;
+    margin-bottom: 0em;
+    width: 80%;
+    min-width: 768px;
+}
+
+#conteneur{
+	width: 80%;
+    min-width: 768px;
+}
+
+#conteneur #largeur, #contact form{
+    width: 48%;
+	margin-right: 2%;
+}
+
+footer nav{
+	width: 80%;
+    min-width: 768px;
+}
+
+footer p{
+    width: 80%;
+    min-width: 768px;      
+}
+
 }
 
