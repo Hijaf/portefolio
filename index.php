@@ -27,7 +27,7 @@
 				while($loop->have_posts()):
 					$loop->the_post();
 		?>
-		<li class="colonne <?php post_class();?>">
+		<li <?php post_class();?>>
 			<dl>
 				<dt><a href="<?php the_permalink();?>" title="vers <?php the_title();?>"><?php the_title();?></a></dt>
 				<dd><a href="<?php the_permalink();?>" title="vers <?php the_title();?>"><?php the_post_thumbnail('thumbnail');?></a></dd>
@@ -58,7 +58,7 @@
 					while($loop->have_posts()):
 						$loop->the_post();
 			?>
-			<li class="colonne <?php post_class();?>">
+			<li <?php post_class('colonne');?>>
 				<?php the_title(); the_post_thumbnail('medium');?>
 			</li>
 			<?php 
