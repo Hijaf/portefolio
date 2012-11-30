@@ -53,11 +53,20 @@ if(!function_exists('portefolio_setup')){
 	function portefolio_setup(){
 		add_theme_support('post-thumbnails');
 		add_theme_support('posts-formats', array('aside', 'link', 'gallery', 'status', 'quote', 'image'));
-		if(!function_exists('add_image_size')){
-			add_image_size('folio-work', 640,480,false);
+		if(function_exists('add_image_size')){
+			add_image_size('galerie', 225,160,true);
 		}
 		register_nav_menu('header-menu', __('Header Menu', 'portefolio'));
 	}
+}
+
+add_filter('image_size_names_choose', 'my_image_sizes'); // le filtre qui permet d'ajouter la nouvelle taille au gestionnaire de médias
+function my_image_sizes($sizes) {
+        $addsizes = array(
+                "galerie" => __( "Galerie") // on indique ici le nom de la nouvelle image (défini dans add_image_size), et le texte qui doit apparaître pour la sélection
+                );
+        $newsizes = array_merge($sizes, $addsizes);
+        return $newsizes;
 }
 
 if(!function_exists('create_post_type')){
