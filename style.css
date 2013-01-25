@@ -6,7 +6,7 @@ body:after{clear:both;}
 .boxShadowBas{-webkit-box-shadow:inset 0px 4px 4px -2px rgba(50, 50, 50, 0.4);-moz-box-shadow:inset 0px 4px 4px -2px rgba(50, 50, 50, 0.4);box-shadow:inset 0px 4px 4px -2px rgba(50, 50, 50, 0.4);}
 .boxShadowHaut{-moz-box-shadow:0px 0px 3px 1px rgba(50, 50, 50, 0.4);-webkit-box-shadow:0px 0px 3px 1px rgba(50, 50, 50, 0.4);box-shadow:0px 0px 3px 1px rgba(50, 50, 50, 0.4);}
 .largeur{width:960px;}
-body{margin:0em;background-color:#ffffff;font-family:Myriad,Arial,Helvetica,sans-serif;font-size:14px;}
+body{margin:0em;background-color:#ffffff;font-family:Myriad,Helvetica,Arial,sans-serif;font-size:14px;}
 #centre{width:100%;background-color:#ffffff;overflow:hidden;}
 header{width:960px;margin:1.5em auto 0em;font:1em 'Open Sans Condensed';font-weight:700;}
 header h1{display:inline;float:left;width:22.916666666666664%;margin:0 1.0416666666666665%;margin-left:0em;margin-bottom:0.3em;}
@@ -17,7 +17,7 @@ nav a{display:inline-block;height:2em;width:100%;margin-right:10%;text-align:cen
 nav a:hover{color:white;background-color:rgba(82, 161, 243, 0.8);}
 #actif{color:#52A1F3;}
 #actif:hover{text-decoration:underline;color:white;}
-#accueil{color:white;font:2em league-gothic,serif;padding:1em 0em 1em 0em;line-height:1.5em;background-color:#52A1F3;-webkit-box-shadow:inset 0px 4px 4px -2px rgba(50, 50, 50, 0.4);-moz-box-shadow:inset 0px 4px 4px -2px rgba(50, 50, 50, 0.4);box-shadow:inset 0px 4px 4px -2px rgba(50, 50, 50, 0.4);}
+#accueil{color:white;font:2em League-gothic;padding:1em 0em 1em 0em;line-height:1.5em;background-color:#52A1F3;-webkit-box-shadow:inset 0px 4px 4px -2px rgba(50, 50, 50, 0.4);-moz-box-shadow:inset 0px 4px 4px -2px rgba(50, 50, 50, 0.4);box-shadow:inset 0px 4px 4px -2px rgba(50, 50, 50, 0.4);}
 #accueil h1,#accueil p{width:960px;margin:0.5em auto;}
 #accueil p{text-indent:327px;}
 #travaux{background-image:url('./img/diagonal-noise.png');overflow:hidden;-moz-box-shadow:0px 0px 3px 1px rgba(50, 50, 50, 0.4);-webkit-box-shadow:0px 0px 3px 1px rgba(50, 50, 50, 0.4);box-shadow:0px 0px 3px 1px rgba(50, 50, 50, 0.4);}
