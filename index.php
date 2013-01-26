@@ -20,7 +20,7 @@
     <h1> <?php echo($page_data[1]->post_title);?></h1>
 	<ul>
 		<?php 
-			$args = array('post_type' => 'works', 'posts_per_page' => 4, 'orderby'=>'date');
+			$args = array('post_type' => 'works', 'orderby'=>'date');
 			$loop = new WP_query($args);
 			$i=1;
 			
@@ -92,7 +92,7 @@
 				<div id="largeur">
 					<?php echo($page_data[3]->post_content);?>
 				</div>
-				<form action="#">
+				<form id="formu" action="<?php echo get_site_url(); ?>/wp-content/themes/portefolio/validationForm.php" method="post">
 					<p>
 					<label for="nom">Nom&thinsp;:</label>
 					<input type="text" id="nom" name="nom"/>
