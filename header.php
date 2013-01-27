@@ -9,6 +9,7 @@
 	<meta name="description" content="<?php bloginfo('dexcription');?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="<?php echo get_site_url(); ?>/wp-content/themes/portefolio/img/favicon.ico" />
 	<title><?php bloginfo('name');?></title>
 	<link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/portefolio/css/normalize.css">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/portefolio/css/main.css">
